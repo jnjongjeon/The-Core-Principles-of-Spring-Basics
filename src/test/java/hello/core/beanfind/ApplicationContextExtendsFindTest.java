@@ -9,9 +9,8 @@ import org.springframework.context.annotation.Configuration;
 
 public class ApplicationContextExtendsFindTest {
 
-    AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+    AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(TestConfig.class);
 
-    @Configuration
     static class TestConfig{
         @Bean
         public DiscountPolicy rateDiscountPolicy(){
